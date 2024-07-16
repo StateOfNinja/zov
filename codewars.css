@@ -3,64 +3,46 @@
   margin: 0;
   box-sizing: border-box;
 }
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-.container {
-  width: 100%;
-}
-.head {
+body {
   display: flex;
-  justify-content: space-between;
-  border-bottom: rebeccapurple 5px solid;
+  justify-content: center;
   align-items: center;
-  min-height: 70px;
-  padding: 0 20px;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+}
+.canvas__game {
+  border: 1px solid white;
+}
+.pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(109, 115, 119);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 15px;
+  height: 150px;
+  width: 200px;
+  h1 {
+    color: rgb(221, 145, 3);
+  }
+}
+.hidden {
+  display: none;
 }
 
-.text__head {
-  display: flex;
-}
-.title__head {
-  font-size: 34px;
-}
-.logo__head img {
-  width: 50px;
-  height: 42px;
-}
-.search__box {
-  position: relative;
-  width: 350px;
-}
-.search {
-  width: 100%;
-  border-radius: 25px;
-  border: 1px solid black;
-  padding: 8px 10px;
-  outline: none;
-}
-.search__box img {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: 4%;
-  top: 25%;
-}
-.content {
-  width: 100%;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.content div {
-  display: block;
-  width: 380px;
-  height: 214px;
+.start {
+  cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 5px;
+  margin-top: 17px;
+  background-color: yellow;
+  box-shadow: inset rgba(31, 29, 0, 0.5) -3px -3px 8px,
+    inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
+    rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+}
+.start:active {
+  width: 70px;
+  height: 30px;
 }
